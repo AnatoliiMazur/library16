@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>16cm</title>
+
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- App -->
+<div id="app">
+
+	<!-- App Header -->
+	<header class="bg-light d-flex flex-column flex-md-row align-items-center p-3 px-md-4 border-bottom shadow-sm">
+		<h5 class="my-0 mr-md-auto font-weight-normal">16cm Library</h5>
+		<nav class="my-2 my-md-0 mr-md-3">
+			<a class="p-2 text-dark" href="#">Features</a>
+			<a class="p-2 text-dark" href="#">Enterprise</a>
+			<a class="p-2 text-dark" href="#">Support</a>
+			<a class="p-2 text-dark" href="#">Pricing</a>
+		</nav>
+		<a class="btn btn-outline-primary" href="#">Sign up</a>
+	</header>
+
+	<!-- App Section -->
+	<section class="py-5">
+		<div class="container">
+			<h2 class="text-center">Users</h2>
+			<div class="row py-4">
+				<div class="col-6">
+					<form id="form" @submit.prevent="addUser">
+						<input type="text" v-model="newUser.name" placeholder="Username">
+						<input type="email" v-model="newUser.email" placeholder="email@email.com">
+						<input type="submit" value="Add User">
+					</form>
+					<ul class="errors">
+						<li v-show="!validation.name">Name cannot be empty.</li>
+						<li v-show="!validation.email">Please provide a valid email address.</li>
+					</ul>
+				</div>
+				<div class="col-6">
+					<ul is="transition-group">
+						<li v-for="user in users" class="user" :key="user['.key']">
+							<span>{{user.name}} - {{user.email}}</span>
+							<button @click="removeUser(user)">X</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-light py-5">
+		<div class="container">
+			<h2 class="text-center">Add Books</h2>
+			<form class="py-4" @submit.prevent="addBook">
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<input v-model="newBook.title" type="text" class="form-control" placeholder="Title">
+					</div>
+					<div class="form-group col-md-6">
+						<input v-model="newBook.img" type="text" class="form-control" placeholder="Image Link">
+					</div>
+					<div class="form-group col-md-6">
+						<input v-model="newBook.author" type="text" class="form-control" placeholder="Author">
+					</div>
+					<div class="form-group col-md-6">
+						<input v-model="newBook.year" type="text" class="form-control" placeholder="Year">
+					</div>
+					<div class="form-group col-md-6">
+						<input v-model="newBook.genre" type="text" class="form-control" placeholder="Genre">
+					</div>
+					<div class="form-group col-md-6">
+						<input v-model="newBook.isbn" type="text" class="form-control" placeholder="ISBN">
+					</div>
+					<div class="form-group col-12">
+						<textarea v-model="newBook.description" class="form-control" placeholder="Description"></textarea>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Add Book</button>
+			</form>
+		</div>
+	</section>
+
+	<section class="py-5">
+		<div class="container">
+			<h2 class="text-center">Books</h2>
+			<div class="form-group">
+				<label>
+					Choose a genre
+					<select v-for="genre in books.genre">
+						<option>{{genre}}</option>
+					</select>
+				</label>
+			</div>
+
+			<div class="row row-30 py-4">
+				<div class="col-6" v-for="book in books">
+					<div class="card">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<div class="card-header">
+									<img :src="book.img" class="img-fluid" alt="">
+									<div class="small">Genre: <span class="text-muted">{{ book.genre }}</span></div>
+									<div class="small">Publication: <span class="text-muted">{{ book.year }}</span></div>
+									<div class="small">IBSN: <span class="text-muted">{{ book.isbn }}</span></div>
+									<div class="small">Balance: <span class="text-muted">{{ book.balance }}</span></div>
+								</div>
+							</div>
+							<div class="col-8">
+								<div class="card-body">
+									<h3>{{ book.title }}</h3>
+									<h6>By {{ book.author }}</h6>
+									<p>{{ book.description }}</p>
+									<button class="btn btn-primary" @click="borrowBook(book)">Borrow</button>
+									<button class="btn btn-success" @click="returnBook(book)">Return</button>
+									<button class="btn btn-warning" @click="editBook(book)">Edit</button>
+									<button class="btn btn-danger"  @click="modalToggleRemove(book)">Remove</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-light py-5">
+		<div class="container">
+			<h2 class="text-center">Book Reservation</h2>
+			<div class="row">
+				<div class="col-6">
+					<form class="py-4" @submit.prevent="reserveBook">
+						<div class="form-row">
+							<div class="form-group col-12">
+								<input v-model="reserveInfo.email" type="text" class="form-control" placeholder="E-Mail">
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary">Add Book</button>
+					</form>
+				</div>
+				<div class="col-6">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g id="qrcode"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- App Footer -->
+	<footer class="bg-light py-5 text-center border-top">
+		<div class="container">
+			<p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.
+			</p>
+			<p><a href="#">Back to top</a></p>
+		</div>
+	</footer>
+
+	<!-- Modal -->
+	<transition name="modal">
+		<modal v-if="modalShowEdit"   @close="modalToggleEdit"   title="Modal Edit"></modal>
+		<modal v-if="modalShowBorrow" @close="modalToggleBorrow" title="Modal Borrow">
+
+		</modal>
+		<modal v-if="modalShowRemove" @close="modalToggleRemove" title="Modal Remove">
+			<div slot="modal-body">
+				<h6>Are You sure You want delete - <b>"{{ currentBook.title }}"</b>?</h6>
+				<p class="small" v-if="currentBook.balance == 1">{{ currentBook.balance }} book on balance.</p>
+				<p class="small" v-if="currentBook.balance > 1">{{ currentBook.balance }} books on balance.</p>
+			</div>
+			<div slot="modal-footer">
+				<button class="btn btn-danger" @click="removeBook(currentBook['.key'])">Remove</button>
+				<button class="btn btn-secondary" @click="modalToggleRemove()">Close</button>
+			</div>
+		</modal>
+	</transition>
+
+</div>
+
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

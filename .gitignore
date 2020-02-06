@@ -1,0 +1,18 @@
+# Мусор ( игнорируется везде )
+*.map
+*.db
+
+# Игнорирование всего в корне проекта
+/*
+
+# Обязательные файлы
+!/.gitignore
+!/config.js
+!/gulpfile.js
+!/package.json
+!/.firebaserc
+!/firebase.json
+!cm-4-4-4-4-export.json
+
+# Обязательные папки
+!/dev

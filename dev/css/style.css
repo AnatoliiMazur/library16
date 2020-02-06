@@ -1,0 +1,98 @@
+button {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+.user {
+	display: flex;
+	justify-content: space-between;
+	line-height: 30px;
+	padding: 10px;
+	border-top: 1px solid #eee;
+	overflow: hidden;
+	transition: all .25s ease;
+}
+
+.user:last-child {
+	border-bottom: 1px solid #eee;
+}
+
+.v-enter, .v-leave-active {
+	height: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-top-width: 0;
+	border-bottom-width: 0;
+}
+
+.errors {
+	margin-top: 15px;
+	color: #f00;
+
+	padding: 0;
+	list-style: none;
+}
+
+.row-30 {
+	margin-bottom: -30px;
+}
+
+.row-30:empty {
+	margin-bottom: 0;
+}
+
+.row-30 > * {
+	margin-bottom: 30px;
+}
+
+.card-header,
+.card-body {
+	padding: 15px;
+}
+
+.card-header {
+	background-color: transparent;
+	border: 0;
+	padding-right: 0;
+}
+
+img + .small {
+	margin-top: 15px;
+}
+
+* + .small {
+	margin-top: 3px;
+}
+
+.modal {
+	display: block;
+	opacity: 1;
+}
+
+.modal-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0, .75);
+}
+
+.modal-bg,
+.modal-content,
+.modal-enter-active,
+.modal-leave-active {
+	transition: all ease-in-out .25s;
+}
+
+.modal-enter-active .modal-bg,
+.modal-leave-active .modal-bg {
+	opacity: 0;
+}
+
+.modal-enter-active .modal-content,
+.modal-leave-active .modal-content {
+	opacity: 0;
+	transform: scale(1.5);
+}

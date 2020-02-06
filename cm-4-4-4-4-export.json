@@ -1,0 +1,138 @@
+{
+  "books" : {
+    "-LmUyZv5syfixV92oTHF" : {
+      "author" : "J.K. Rowling",
+      "description" : "Harry Potter and the Philosopher's Stone is a fantasy novel written by British author J. K. Rowling. The first novel in the Harry Potter series and Rowling's debut novel, it follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday, when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry. ",
+      "genre" : "Fantasy",
+      "img" : "https://upload.wikimedia.org/wikipedia/en/6/6b/Harry_Potter_and_the_Philosopher%27s_Stone_Book_Cover.jpg",
+      "isbn" : "978-0-7475-3274-3",
+      "title" : "Harry Potter and the Philosopher's Stone",
+      "year" : "26 June 1997",
+      "balance" : "1"
+    },
+    "-9mRVrBxcPkFOLlMtAl9" : {
+      "author" : "J. K. Rowling",
+      "description" : "Harry Potter and the Chamber of Secrets is a fantasy novel written by British author J. K. Rowling and the second novel in the Harry Potter series. The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry, during which a series of messages on the walls of the school's corridors warn that the \"Chamber of Secrets\"",
+      "genre" : "Fantasy",
+      "img" : "https://upload.wikimedia.org/wikipedia/en/5/5c/Harry_Potter_and_the_Chamber_of_Secrets.jpg",
+      "isbn" : "0-7475-3849-2",
+      "title" : "Harry Potter and the Chamber of Secrets",
+      "year" : "2 July 1998",
+      "balance" : "10"
+    },
+    "-3mRXAjfuk3g9MgOGjlz" : {
+      "author" : "J. K. Rowling",
+      "description" : "Harry Potter and the Prisoner of Azkaban is a fantasy novel written by British author J. K. Rowling and the third in the Harry Potter series. The book follows Harry Potter, a young wizard, in his third year at Hogwarts School of Witchcraft and Wizardry. Along with friends Ronald Weasley and Hermione Granger, Harry investigates Sirius Black.",
+      "genre" : "Fantasy",
+      "img" : "https://upload.wikimedia.org/wikipedia/en/a/a0/Harry_Potter_and_the_Prisoner_of_Azkaban.jpg",
+      "isbn" : "0-7475-4215-5",
+      "title" : "Harry Potter and the Prisoner of Azkaban",
+      "year" : "8 July 1999",
+      "balance" : "10"
+    },
+    "-LmUxFJjhSEr5qaXi4vP" : {
+      "author" : "Kelly Harms",
+      "description" : "A laugh-out-loud funny, pitch-perfect novel that will have readers rooting for this unlikely, relatable, and totally lovable heroine, The Overdue Life of Amy Byler is the ultimate escape—and will leave moms everywhere questioning whether it isn’t time for a #momspringa of their own.",
+      "genre" : "Humorous Fiction",
+      "img" : "https://images-na.ssl-images-amazon.com/images/I/51CUy6NuYSL._SX331_BO1,204,203,200_.jpg",
+      "isbn" : "1542040574",
+      "title" : "The Overdue Life of Amy Byler",
+      "year" : "May 1, 2019",
+      "balance" : "10"
+    },
+    "-LmUxufs4vu8IDRk2IJw" : {
+      "author" : "David Epstein",
+      "description" : "It’s a joy to spend hours in the company of a writer as gifted as David Epstein. And the joy is all the greater when that writer shares so much crucial and revelatory information about performance, success, and education.",
+      "genre" : "Psychology",
+      "img" : "https://images-na.ssl-images-amazon.com/images/I/41nLL-wUTXL._SX330_BO1,204,203,200_.jpg",
+      "isbn" : "0735214484",
+      "title" : "Range: Why Generalists Triumph in a Specialized World",
+      "year" : "May 28, 2019",
+      "balance" : "10"
+    },
+    "-LmUyZv5EyfixV92oTHF" : {
+      "author" : "Elie Wiesel, Marion Wiesel",
+      "description" : "What makes this book so chilling is not the pretense of what happened but a very real description of every thought, fear and the apathetic attitude demonstrated as a response . . . Night, Wiesel's autobiographical masterpiece, is a heartbreaking memoir.",
+      "genre" : "History",
+      "img" : "https://images-na.ssl-images-amazon.com/images/I/41kkT0WKkXL._SX310_BO1,204,203,200_.jpg",
+      "isbn" : "9780374500016",
+      "title" : "Night ",
+      "year" : "January 16, 2006",
+      "balance" : "10"
+    },
+    "-LmUyZv5EyficV92oTHF" : {
+      "author" : "J.K. Rowling",
+      "description" : "Harry Potter and the Philosopher's Stone is a fantasy novel written by British author J. K. Rowling. The first novel in the Harry Potter series and Rowling's debut novel, it follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday, when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry. ",
+      "genre" : "Fantasy",
+      "img" : "https://upload.wikimedia.org/wikipedia/en/6/6b/Harry_Potter_and_the_Philosopher%27s_Stone_Book_Cover.jpg",
+      "isbn" : "978-0-7475-3274-3",
+      "title" : "Harry Potter and the Philosopher's Stone",
+      "year" : "26 June 1997",
+      "balance" : "10"
+    },
+    "-Lm1RVrBxcPkFOLlMtAlu" : {
+      "author" : "J. K. Rowling",
+      "description" : "Harry Potter and the Chamber of Secrets is a fantasy novel written by British author J. K. Rowling and the second novel in the Harry Potter series. The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry, during which a series of messages on the walls of the school's corridors warn that the \"Chamber of Secrets\"",
+      "genre" : "Fantasy",
+      "img" : "https://upload.wikimedia.org/wikipedia/en/5/5c/Harry_Potter_and_the_Chamber_of_Secrets.jpg",
+      "isbn" : "0-7475-3849-2",
+      "title" : "Harry Potter and the Chamber of Secrets",
+      "year" : "2 July 1998",
+      "balance" : "10"
+    },
+    "-LmR1XAjfuk3g9MgOGjlz" : {
+      "author" : "J. K. Rowling",
+      "description" : "Harry Potter and the Prisoner of Azkaban is a fantasy novel written by British author J. K. Rowling and the third in the Harry Potter series. The book follows Harry Potter, a young wizard, in his third year at Hogwarts School of Witchcraft and Wizardry. Along with friends Ronald Weasley and Hermione Granger, Harry investigates Sirius Black.",
+      "genre" : "Fantasy",
+      "img" : "https://upload.wikimedia.org/wikipedia/en/a/a0/Harry_Potter_and_the_Prisoner_of_Azkaban.jpg",
+      "isbn" : "0-7475-4215-5",
+      "title" : "Harry Potter and the Prisoner of Azkaban",
+      "year" : "8 July 1999",
+      "balance" : "10"
+    },
+    "-LmU1xFJjhSEr5qaXi4vP" : {
+      "author" : "Kelly Harms",
+      "description" : "A laugh-out-loud funny, pitch-perfect novel that will have readers rooting for this unlikely, relatable, and totally lovable heroine, The Overdue Life of Amy Byler is the ultimate escape—and will leave moms everywhere questioning whether it isn’t time for a #momspringa of their own.",
+      "genre" : "Humorous Fiction",
+      "img" : "https://images-na.ssl-images-amazon.com/images/I/51CUy6NuYSL._SX331_BO1,204,203,200_.jpg",
+      "isbn" : "1542040574",
+      "title" : "The Overdue Life of Amy Byler",
+      "year" : "May 1, 2019",
+      "balance" : "10"
+    },
+    "-LmU1xufs4vu8IDRk2IJw" : {
+      "author" : "David Epstein",
+      "description" : "It’s a joy to spend hours in the company of a writer as gifted as David Epstein. And the joy is all the greater when that writer shares so much crucial and revelatory information about performance, success, and education.",
+      "genre" : "Psychology",
+      "img" : "https://images-na.ssl-images-amazon.com/images/I/41nLL-wUTXL._SX330_BO1,204,203,200_.jpg",
+      "isbn" : "0735214484",
+      "title" : "Range: Why Generalists Triumph in a Specialized World",
+      "year" : "May 28, 2019",
+      "balance" : "10"
+    },
+    "-LmU1yZv5EyfixV92oTHF" : {
+      "author" : "Elie Wiesel, Marion Wiesel",
+      "description" : "What makes this book so chilling is not the pretense of what happened but a very real description of every thought, fear and the apathetic attitude demonstrated as a response . . . Night, Wiesel's autobiographical masterpiece, is a heartbreaking memoir.",
+      "genre" : "History",
+      "img" : "https://images-na.ssl-images-amazon.com/images/I/41kkT0WKkXL._SX310_BO1,204,203,200_.jpg",
+      "isbn" : "9780374500016",
+      "title" : "Night ",
+      "year" : "January 16, 2006",
+      "balance" : "10"
+    }
+  },
+  "users" : {
+    "1" : {
+      "email" : "mazurtolik87@gmail.com",
+      "name" : "kraken"
+    },
+    "-LmVJ42P4TzAt5rUeKUi" : {
+      "email" : "sd@sd.dsf",
+      "name" : "sd"
+    },
+    "-LmVJ8og6BjvvTJhJsEZ" : {
+      "email" : "fdsg@sfdg.sdf",
+      "name" : "dfg"
+    }
+  }
+}
